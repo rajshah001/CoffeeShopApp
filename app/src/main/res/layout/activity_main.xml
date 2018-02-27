@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cofeeback5"
+    android:orientation="vertical"
+    tools:context="com.example.android.coffeeshop.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:text="Enjoy The Taste Ride By  Taking  a Sip"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#E4D9A6"
+                android:textSize="25sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#000000" />
+
+            <EditText
+                android:theme="@style/checkBoxStyle"
+                android:id="@+id/name_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:hint="Name"
+                android:textColorHint="#FFC107"
+                android:inputType="textCapWords"
+                android:gravity="center"
+                android:background="@null"/>
+
+            <EditText
+                android:theme="@style/checkBoxStyle"
+                android:id="@+id/contact_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:hint="Contact Number"
+                android:textColorHint="#FFC107"
+                android:inputType="phone"
+                android:gravity="center"
+                android:background="@null"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Toppings"
+                android:layout_marginTop="8dp"
+                android:textAllCaps="true"
+                android:textColor="#FFC107"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/whipped_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Whipped Cream"
+                android:textColor="#BDBDBD"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:theme="@style/checkBoxStyle" />
+
+            <CheckBox
+                android:id="@+id/chocolate_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Chocolate"
+                android:textColor="#BDBDBD"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:theme="@style/checkBoxStyle" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="quantity"
+                android:textAllCaps="true"
+                android:textColor="#FFC107"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/decrement_button"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/quantity_text_view"
+                    android:background="#E4D9A6"
+                    android:onClick="decrement"
+                    android:text="-"
+                    android:textSize="20sp"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/quantity_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text='1'
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/increment_button"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/quantity_text_view"
+                    android:background="#E4D9A6"
+                    android:onClick="increment"
+                    android:text="+"
+                    android:textSize="20sp"
+                    android:textAllCaps="true" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="order summary"
+                android:textAllCaps="true"
+                android:textColor="#FFC107"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/order_summary_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:baselineAligned="false"
+                android:textAlignment="center"
+                android:text=" "
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="#E4D9A6"
+                android:onClick="submitOrder"
+                android:text="order"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
