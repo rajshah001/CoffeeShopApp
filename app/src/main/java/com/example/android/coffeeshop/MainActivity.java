@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         order_summary += "\nWhipped Cream : " + whipadd;
         order_summary += "\nChocolate : " + chocadd;
         order_summary += "\nQuantity : " + quantity;
-        order_summary += "\nPrice : $" + CalculatePrice();
+        order_summary += "\nPrice : "+ "\u20B9" + CalculatePrice();
         order_summary += "\n\nThank You!";
         RatePerCup = 5;
 
