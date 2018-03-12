@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="8dp"
-                android:text="Enjoy The Taste Ride By  Taking  a Sip"
+                android:text="@string/head"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="#E4D9A6"
@@ -41,7 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="4dp"
-                android:hint="Name"
+                android:hint="@string/name"
                 android:textColorHint="#FFC107"
                 android:inputType="textCapWords"
                 android:gravity="center"
@@ -53,7 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="4dp"
-                android:hint="Contact Number"
+                android:hint="@string/number"
                 android:textColorHint="#FFC107"
                 android:inputType="phone"
                 android:gravity="center"
@@ -68,18 +68,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Toppings"
+                android:text="@string/topping"
                 android:layout_marginTop="8dp"
                 android:textAllCaps="true"
                 android:textColor="#FFC107"
                 android:textSize="20sp" />
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
             <CheckBox
                 android:id="@+id/whipped_checkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Whipped Cream"
+                android:text="@string/cream"
                 android:textColor="#BDBDBD"
                 android:textAppearance="?android:textAppearanceMedium"
                 android:theme="@style/checkBoxStyle" />
@@ -89,10 +93,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Chocolate"
+                android:text="@string/chocolate"
                 android:textColor="#BDBDBD"
                 android:textAppearance="?android:textAppearanceMedium"
                 android:theme="@style/checkBoxStyle" />
+            </LinearLayout>
 
             <View
                 android:layout_width="fill_parent"
@@ -104,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
 
-                android:text="quantity"
+                android:text="@string/quantity"
                 android:textAllCaps="true"
                 android:textColor="#FFC107"
                 android:textSize="20sp" />
@@ -120,9 +125,9 @@
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     android:layout_toLeftOf="@id/quantity_text_view"
-                    android:background="#E4D9A6"
+                    android:background="@drawable/round_button"
                     android:onClick="decrement"
-                    android:text="-"
+                    android:text="@string/minus"
                     android:textSize="20sp"
                     android:textAllCaps="true" />
 
@@ -146,9 +151,9 @@
                     android:layout_marginBottom="20dp"
                     android:layout_marginLeft="25dp"
                     android:layout_toRightOf="@+id/quantity_text_view"
-                    android:background="#E4D9A6"
+                    android:background="@drawable/round_button"
                     android:onClick="increment"
-                    android:text="+"
+                    android:text="@string/plus"
                     android:textSize="20sp"
                     android:textAllCaps="true" />
 
@@ -163,7 +168,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="order summary"
+                android:text="@string/order_summary"
                 android:textAllCaps="true"
                 android:textColor="#FFC107"
                 android:textSize="20sp" />
@@ -181,13 +186,13 @@
                 android:textSize="16sp" />
 
             <Button
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
-                android:background="#E4D9A6"
+                android:background="@drawable/round_button"
                 android:onClick="submitOrder"
-                android:text="order"
+                android:text="@string/order"
                 android:textAllCaps="true"
                 android:textSize="20sp" />
 
